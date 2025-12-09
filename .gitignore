@@ -1,0 +1,28 @@
+# Local env
+.env
+
+# Python virtual env
+.venv/
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+# Local env & venv
+.env
+.venv/
+
+# Node stuff
+node_modules/
+frontend/node_modules/
+
+# Python bytecode
+__pycache__/
+**/__pycache__/
+
+# Throwaway React copies
+* copy.tsx

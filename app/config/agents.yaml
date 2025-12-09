@@ -1,0 +1,131 @@
+domains:
+  nexus_command:
+    domain_name: "Nexus Command"
+    domain_overview: >
+      Nexus Command is a domain-agnostic, multi-agent orchestration layer designed
+      to coordinate specialised AI agents as if they were a digital team. The goal
+      is to provide strategic intelligence, fast routing, and high-quality execution
+      across analytics, planning, research, communication, and automation workflows.
+      The Nexus Chief Agent acts as an executive orchestrator: it understands intent,
+      frames business impact, selects the right specialist agent, and stitches
+      outputs into coherent, executive-ready deliverables.
+
+    agents:
+      - id: atlas
+        nickname: "Atlas"
+        official_name: "AnalyticsAgent"
+        description: "Historical performance analytics: overtime %, hours mix, cost drivers, KPI trends, and executive-ready summaries."
+        cues:
+          - "historical"
+          - "last week"
+          - "last month"
+          - "past performance"
+          - "hours worked"
+          - "overtime trend"
+          - "what happened"
+
+      - id: maestro
+        nickname: "Maestro"
+        official_name: "CapacityPlanner"
+        description: "Future schedules, FTE optimisation, overtime prevention, and capacity balancing."
+        cues:
+          - "schedule"
+          - "next week"
+          - "upcoming"
+          - "capacity"
+          - "prevent overtime"
+          - "utilisation"
+          - "coverage"
+
+      - id: aegis
+        nickname: "Aegis"
+        official_name: "ComplianceAgent"
+        description: "Training & compliance: onboarding, mandatory completions, certification gaps and risk exposure."
+        cues:
+          - "training"
+          - "compliance"
+          - "onboarding"
+          - "certifications"
+          - "completion rate"
+          - "mandatory"
+
+      - id: scout
+        nickname: "Scout"
+        official_name: "TrendIntelAgent"
+        description: "External signals and Google Trends: market interest, rising topics, seasonality and demand patterns."
+        cues:
+          - "google trends"
+          - "trending"
+          - "market signals"
+          - "interest over time"
+          - "external demand"
+
+      - id: sage
+        nickname: "Sage"
+        official_name: "ResearchAgent"
+        description: "Deep research, competitive intelligence, industry trends and foresight briefs."
+        cues:
+          - "research"
+          - "intel"
+          - "analysis"
+          - "deep dive"
+          - "insights"
+          - "forecast"
+
+      - id: pulse
+        nickname: "Pulse"
+        official_name: "CommsAgent"
+        description: "Communications: email/WhatsApp interactions, backlog, closure rates and escalation patterns."
+        cues:
+          - "email"
+          - "whatsapp"
+          - "inbox"
+          - "backlog"
+          - "touchpoints"
+          - "messages"
+          - "closure rate"
+
+      - id: lexi
+        nickname: "Lexi"
+        official_name: "VertexSMEAgent"
+        description: "Textual SME using Vertex RAG to answer from policies, manuals and reference documents with citations."
+        cues:
+          - "policy"
+          - "handbook"
+          - "manual"
+          - "guidelines"
+          - "SOP"
+          - "how do we handle"
+          - "what is the rule"
+
+      - id: quanta
+        nickname: "Quanta"
+        official_name: "BigQuerySMEAgent"
+        description: "Structured-data SME answering from BigQuery datasets and internal metrics."
+        cues:
+          - "how many"
+          - "counts by"
+          - "grouped by"
+          - "from bigquery"
+          - "from the data mart"
+
+      - id: gears
+        nickname: "Gears"
+        official_name: "AutomationAgent"
+        description: "Workflow and job automation: scheduled tasks, multi-step flows, system integrations."
+        cues:
+          - "automate this"
+          - "run this weekly"
+          - "schedule a job"
+          - "chain these steps"
+
+      - id: sentinel
+        nickname: "Sentinel"
+        official_name: "MonitorAgent"
+        description: "Monitoring and alerts: anomalies, thresholds, SLA risk and watchlists."
+        cues:
+          - "monitor"
+          - "watch this"
+          - "alert me if"
+          - "threshold"
+          - "anomaly"
